@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Website New</title>
-    </head>
-    <body>
-        <h1>Hello World! 123</h1>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-groceries</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Moqups</div>
+      <div class="nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item nav-center">Our Package</div>
+        <div class="nav-item">Call Us</div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="home">
+        <div class="banner">
+          <h1>Top Rated E Groceries Shop in Indonesia</h1>
+          <h3>Everyday with the best ingredients</h3>
+        </div>
+      </section>
+      <main class="container">
+        <section class="main-left">
+          <img src="img/fruit1.jpg" alt="Description of the image" />
+          <p>"setiap hari beli sayur buah yang fresh disini"</p>
+        </section>
+        <section class="main-right">
+          <h2>Contact Us</h2>
+          <p>sales akan menghubungi anda 1x24jam setelah data kami terima</p>
+          <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">what are you interested in?</label>
+            <select id="message" name="message">
+              <option value="Food">food</option>
+              <option value="Food">Fruit</option>
+              <option value="Food">Vegetables</option>
+            </select>
+            <button type="submit">SEND</button>
+          </form>
+        </section>
+      </main>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
